@@ -197,6 +197,7 @@ video {
 main {
   position: relative;
   background-color: rgba(0, 0, 0, 0.429);
+  overflow: hidden;
 }
 
 /* page1 */
@@ -347,7 +348,6 @@ main {
   padding: 0 100px;
   box-sizing: border-box;
   position: relative;
-  z-index: 99;
 }
 
 .card {
@@ -359,7 +359,7 @@ main {
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
   position: relative;
-  z-index: 3;
+  z-index: 899;
   transform-style: preserve-3d;
   transform: rotateY(0deg) rotateX(0deg);
   overflow: hidden;
@@ -442,7 +442,7 @@ main {
   position: relative;
   width: 100%;
   height: calc(100% - 50vh);
-  background: linear-gradient(to bottom left, #4ecd20, #9dcb1f);
+  background: linear-gradient(to bottom left, #51e81a, #9dcb1f);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -536,10 +536,341 @@ main {
 .style-motion #left {
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 15%;
 }
 .style-motion #right {
   position: absolute;
   bottom: 20%;
-  right: 10%;
+  right: 15%;
+}
+
+.page5 {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 30px;
+}
+.page5 .elem {
+  height: 40%;
+  width: 33%;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  background-color: #9dcb1f;
+  z-index: 89;
+}
+.page5 h1 {
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25%;
+  font-family: gilroy;
+  -webkit-text-stroke: 1px white;
+  color: #000;
+  transition: -webkit-text-stroke 0.5s ease-in-out;
+  z-index: 89;
+}
+
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  display: none;
+  transition: transform 0.5s ease-in-out;
+}
+.elem h2 {
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.elem:hover {
+  background-color: transparent;
+  color: white;
+}
+.elem:hover img {
+  display: block;
+  transform: scale(1.1);
+}
+.elem:hover h2 {
+  color: white;
+}
+
+footer {
+  height: 40vh;
+  width: 100%;
+  background-color: #9dcb1f;
+  padding: 20px 50px;
+  position: relative;
+  z-index: 89;
+}
+footer .details {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details img {
+  height: 77px;
+}
+.details .logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+}
+.logo i {
+  font-size: 30px;
+  color: black;
+}
+.details .part1 {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+}
+.part1 h4 {
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #000;
+}
+.details .part1h4 {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+}
+.part1h4 h4 {
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #000;
+}
+.details .part2 {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+}
+.part2 p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000;
+}
+.part2 h4 {
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #000;
+}
+.links {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.links h4 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 10px;
+}
+footer h4:hover {
+  color: white;
+}
+
+/* ========================= */
+/* 🌐 RESPONSIVE DESIGN */
+/* ========================= */
+
+/* ===== Tablet Devices (≤1024px) ===== */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 4vw;
+  }
+
+  nav h1 {
+    font-size: 1.5rem;
+  }
+
+  nav .menu {
+    gap: 1.5rem;
+  }
+
+  .page1 h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .page1 p {
+    width: 70%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .page2 {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .page2 .left,
+  .page2 .right {
+    width: 90%;
+  }
+
+  .page3 {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .page4 .content {
+    width: 85%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Mobile Devices (≤600px) ===== */
+@media (max-width: 600px) {
+  nav {
+    padding: 0 6vw;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav h1 {
+    font-size: 1.3rem;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .page1 {
+    padding: 4rem 1rem;
+  }
+
+  .page1 h1 {
+    font-size: 2.8rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .page1 p {
+    width: 90%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .page2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .page2 .left,
+  .page2 .right {
+    width: 100%;
+  }
+
+  .page3 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .page3 .card {
+    padding: 1rem;
+  }
+
+  .page4 {
+    padding: 3rem 1rem;
+  }
+
+  .page4 h2 {
+    font-size: 2rem;
+  }
+
+  .page4 .content {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
