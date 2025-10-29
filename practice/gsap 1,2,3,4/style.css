@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+       min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cursor{
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position:fixed;
+    background-color: aliceblue;
+    z-index: 99999;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(80, 118, 233);
+    display: flex;
+    align-items: center;
+
+}
+.page2 h1{
+    font-size: 33vw;
+}
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(39, 201, 25);
+}
+.string{
+    height: 300px;
+    width: 100%;
+ 
+}
+

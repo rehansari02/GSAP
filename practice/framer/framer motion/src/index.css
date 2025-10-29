@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: aliceblue;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+.box{
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96768393-b5ef-4ecd-b39c-6ef9c12ef61a/dgnid74-e506cf25-aad2-42d7-8a26-2b0739ab66fb.png/v1/fill/w_970,h_824/oggy_png_by_mistercraigboi_dgnid74-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiIvZi85Njc2ODM5My1iNWVmLTRlY2QtYjM5Yy02ZWY5YzEyZWY2MWEvZGduaWQ3NC1lNTA2Y2YyNS1hYWQyLTQyZDctOGEyNi0yYjA3MzlhYjY2ZmIucG5nIiwid2lkdGgiOiI8PTExNzcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.wcVKsAbOtfoNsP7EwfLz_UOms6Q6PsKVTWE2ButFAj0);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+ 
+}
+
+.circle{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #e53c0d;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgb(237, 234, 234);
+}

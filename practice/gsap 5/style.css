@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1687986392446-4b9ea7560f2e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: white;
+}
+
+nav h1{
+    font-size: 40px;
+}
+nav i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.right{
+    height: 100%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.782);
+    position: absolute;
+    top: 0;
+    right: -40%;
+    padding: 100px 50px;
+    backdrop-filter: blur(10px);
+}
+
+.right h4{
+    font-size: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: black;
+}
+.right i{
+     font-size: 30px;
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 5px;
+    font-weight: 500;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 50%;
+}
+.right i:hover{
+    background-color: gray;
+    color: white;
+
+}
